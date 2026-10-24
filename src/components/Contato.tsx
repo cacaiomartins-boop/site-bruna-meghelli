@@ -1,11 +1,14 @@
 import { clinic } from "../data/clinic";
 import { IconCalendario, IconInstagram, IconMail, IconWhatsApp } from "./Icons";
+import { Parallax, Reveal } from "./Reveal";
 
 export default function Contato() {
   return (
     <section id="contato" className="relative overflow-hidden bg-areia/45 py-16 md:py-24">
-      <div className="blob absolute -right-20 -top-20 h-56 w-56 bg-terra/80" aria-hidden="true" />
-      <div className="container-site relative">
+      <Parallax velocidade={0.15} className="absolute -right-20 -top-20">
+        <div className="blob h-56 w-56 bg-terra/80" aria-hidden="true" />
+      </Parallax>
+      <Reveal className="container-site relative">
         <h2 className="titulo-secao">Vamos conversar?</h2>
         <p className="mt-4 max-w-xl text-lg md:text-xl">Agende seu atendimento e dê espaço ao seu processo.</p>
 
@@ -35,7 +38,7 @@ export default function Contato() {
             </a>
           </li>
         </ul>
-      </div>
+      </Reveal>
     </section>
   );
 }

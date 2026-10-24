@@ -1,12 +1,17 @@
 import { clinic } from "../data/clinic";
 import { IconCalendario, IconWhatsApp } from "./Icons";
+import { Parallax } from "./Reveal";
 
 export default function Hero() {
   return (
     <section id="topo" className="relative overflow-hidden">
       {/* manchas decorativas, como no cartão */}
-      <div className="blob absolute -right-24 -top-24 h-72 w-72 bg-terra/90 md:h-96 md:w-96" aria-hidden="true" />
-      <div className="blob-2 absolute -left-28 bottom-10 h-64 w-64 bg-areia" aria-hidden="true" />
+      <Parallax velocidade={0.18} className="absolute -right-24 -top-24" >
+        <div className="blob h-72 w-72 bg-terra/90 md:h-96 md:w-96" aria-hidden="true" />
+      </Parallax>
+      <Parallax velocidade={-0.12} className="absolute -left-28 bottom-10">
+        <div className="blob-2 h-64 w-64 bg-areia" aria-hidden="true" />
+      </Parallax>
 
       <div className="container-site relative grid items-center gap-10 py-12 md:grid-cols-2 md:gap-14 md:py-20">
         <div className="animar order-2 text-center md:order-1 md:text-left">
