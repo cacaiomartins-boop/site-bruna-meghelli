@@ -1,0 +1,73 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 5rem;
+  }
+  body {
+    @apply bg-creme font-sans font-light text-marrom antialiased;
+  }
+  h1,
+  h2,
+  h3 {
+    @apply font-sans font-semibold;
+  }
+  :focus-visible {
+    outline: 2px solid #a5603f;
+    outline-offset: 3px;
+  }
+}
+
+@layer components {
+  .container-site {
+    @apply mx-auto w-full max-w-6xl px-5 md:px-8;
+  }
+  .titulo-secao {
+    @apply text-2xl font-semibold uppercase tracking-wide text-marrom md:text-3xl;
+  }
+  .btn {
+    @apply inline-flex items-center justify-center gap-2 rounded-full px-7 py-3.5 text-sm font-semibold uppercase tracking-wider transition duration-200;
+  }
+  .btn-primario {
+    @apply bg-terraescura text-creme shadow-sm hover:bg-marrom;
+  }
+  .btn-contorno {
+    @apply border border-terraescura text-terraescura hover:bg-terraescura hover:text-creme;
+  }
+  /* formas orgânicas, como as manchas do cartão */
+  .blob {
+    border-radius: 58% 42% 55% 45% / 48% 56% 44% 52%;
+  }
+  .blob-2 {
+    border-radius: 44% 56% 40% 60% / 56% 42% 58% 44%;
+  }
+}
+
+@keyframes subir {
+  from {
+    opacity: 0;
+    transform: translateY(14px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+.animar {
+  animation: subir 0.8s ease both;
+}
+.animar-2 {
+  animation: subir 0.8s 0.15s ease both;
+}
+@media (prefers-reduced-motion: reduce) {
+  .animar,
+  .animar-2 {
+    animation: none;
+  }
+  html {
+    scroll-behavior: auto;
+  }
+}
