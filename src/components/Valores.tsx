@@ -5,7 +5,7 @@ import { Reveal } from "./Reveal";
 export default function Valores() {
   const v = clinic.valores;
   return (
-    <section id="valores" className="bg-white/45 py-16 md:py-24">
+    <section id="valores" className="bg-white/45 py-14 md:py-12">
       <div className="container-site">
         <Reveal>
           <h2 className="titulo-secao">Valores</h2>

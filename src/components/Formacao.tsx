@@ -3,13 +3,13 @@ import { Reveal } from "./Reveal";
 
 export default function Formacao() {
   return (
-    <section id="formacao" className="relative overflow-hidden bg-areia/45 py-16 md:py-24">
+    <section id="formacao" className="relative overflow-hidden bg-areia/45 py-14 md:py-12">
       <div className="container-site grid gap-14 md:grid-cols-2 md:gap-16">
         <div>
           <Reveal>
             <h2 className="titulo-secao">Formação</h2>
           </Reveal>
-          <ol className="mt-8 space-y-7 border-l-2 border-terra/60 pl-6">
+          <ol className="mt-8 space-y-6 border-l-2 border-terra/60 pl-6">
             {clinic.formacao.map((f, n) => (
               <Reveal as="li" key={f.titulo} delay={n * 100} className="relative">
                 <span className="absolute -left-[31px] top-1.5 h-3 w-3 rounded-full bg-terra" aria-hidden="true" />
@@ -24,7 +24,7 @@ export default function Formacao() {
           <Reveal delay={150}>
             <h2 className="titulo-secao">Experiência</h2>
           </Reveal>
-          <ol className="mt-8 space-y-7 border-l-2 border-terra/60 pl-6">
+          <ol className="mt-8 space-y-6 border-l-2 border-terra/60 pl-6">
             {clinic.experiencia.map((x, n) => (
               <Reveal as="li" key={x.titulo} delay={150 + n * 100} className="relative">
                 <span className="absolute -left-[31px] top-1.5 h-3 w-3 rounded-full bg-terra" aria-hidden="true" />

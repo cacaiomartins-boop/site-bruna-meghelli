@@ -5,7 +5,7 @@ import { Reveal } from "./Reveal";
 export default function Atendimento() {
   const e = clinic.endereco;
   return (
-    <section id="atendimento" className="py-16 md:py-24">
+    <section id="atendimento" className="py-14 md:py-12">
       <div className="container-site">
         <Reveal>
           <h2 className="titulo-secao">Atendimento</h2>
@@ -39,12 +39,12 @@ export default function Atendimento() {
 
           <Reveal
             from="direita"
-            className="order-3 overflow-hidden rounded-2xl shadow-xl shadow-terra/15 ring-4 ring-areia/80 md:order-none md:min-h-[16rem]"
+            className="relative order-3 overflow-hidden rounded-2xl shadow-xl shadow-terra/15 ring-4 ring-areia/80 md:order-none md:min-h-[13.5rem]"
           >
             <img
               src={clinic.fotos.predio}
               alt="Fachada do edifício onde fica o consultório, em São Carlos"
-              className="aspect-[16/10] h-full w-full object-cover object-[50%_65%] md:aspect-auto"
+              className="aspect-[16/10] w-full object-cover object-[50%_65%] md:absolute md:inset-0 md:aspect-auto md:h-full"
               width="680"
               height="382"
               loading="lazy"
@@ -62,7 +62,7 @@ export default function Atendimento() {
           <Reveal
             from="direita"
             delay={120}
-            className="relative order-4 overflow-hidden rounded-2xl shadow-xl shadow-terra/15 ring-4 ring-areia/80 md:order-none md:min-h-[9.5rem]"
+            className="relative order-4 overflow-hidden rounded-2xl shadow-xl shadow-terra/15 ring-4 ring-areia/80 md:order-none md:min-h-[7.5rem]"
           >
             <iframe
               src={e.mapaEmbed}

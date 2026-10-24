@@ -6,7 +6,7 @@ const icones = { Livros: IconLivro, Filmes: IconFilme, Viagens: IconViagem } as 
 
 export default function Sobre() {
   return (
-    <section id="sobre" className="relative overflow-hidden py-16 md:py-24">
+    <section id="sobre" className="relative overflow-hidden py-14 md:py-12">
       {/* monograma como marca d'água, com leve movimento na rolagem */}
       <div className="pointer-events-none absolute -right-10 top-1/2 hidden w-80 -translate-y-1/2 md:block lg:right-10 lg:w-96">
         <Parallax velocidade={0.1}>

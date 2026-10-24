@@ -3,7 +3,7 @@ import { Reveal } from "./Reveal";
 
 export default function Especialidades() {
   return (
-    <section id="especialidades" className="py-16 md:py-24">
+    <section id="especialidades" className="py-14 md:py-12">
       <div className="container-site">
         <Reveal>
           <h2 className="titulo-secao">Especialidades</h2>
