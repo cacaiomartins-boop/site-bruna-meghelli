@@ -5,7 +5,6 @@ import Objetivo from "./components/Objetivo";
 import Especialidades from "./components/Especialidades";
 import Formacao from "./components/Formacao";
 import Atendimento from "./components/Atendimento";
-import Valores from "./components/Valores";
 import Contato from "./components/Contato";
 import Footer from "./components/Footer";
 import WhatsAppFlutuante from "./components/WhatsAppFlutuante";
@@ -21,7 +20,6 @@ export default function App() {
         <Especialidades />
         <Formacao />
         <Atendimento />
-        <Valores />
         <Contato />
       </main>
       <Footer />

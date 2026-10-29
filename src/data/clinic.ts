@@ -98,16 +98,6 @@ export const clinic = {
     },
   ],
 
-  // Valores (aguardando aprovação da Bruna). Para tirar a seção, remova <Valores /> do App.tsx.
-  valores: {
-    intro: "Atendimento com uma sessão por semana. O pagamento pode ser feito de duas formas:",
-    planos: [
-      { nome: "Quinzenal", preco: "R$ 400", detalhe: "Pagamento a cada 15 dias", sessoes: "2 sessões" },
-      { nome: "Mensal", preco: "R$ 700", detalhe: "Pagamento uma vez por mês", sessoes: "4 sessões" },
-    ],
-    nota: "Valores e forma de pagamento combinados diretamente com a Bruna.",
-  },
-
   fotos: {
     hero: "/img/bruna-retrato.webp",
     lendo: "/img/bruna-lendo.webp",

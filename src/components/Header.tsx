@@ -7,7 +7,6 @@ const links = [
   { href: "#especialidades", rotulo: "Especialidades" },
   { href: "#formacao", rotulo: "Formação" },
   { href: "#atendimento", rotulo: "Atendimento" },
-  { href: "#valores", rotulo: "Valores" },
   { href: "#contato", rotulo: "Contato" },
 ];
 
