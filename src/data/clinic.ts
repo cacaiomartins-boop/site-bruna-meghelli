@@ -100,9 +100,11 @@ export const clinic = {
 
   fotos: {
     hero: "/img/bruna-retrato.webp",
+    heroSrcSet:
+      "/img/bruna-retrato-480.webp 480w, /img/bruna-retrato-800.webp 800w, /img/bruna-retrato.webp 1200w",
     lendo: "/img/bruna-lendo.webp",
-    rosto: "/img/bruna-rosto.webp",
     predio: "/img/predio.webp",
-    monograma: "/img/monograma.png",
+    monogramaPequeno: "/img/monograma-240.png",
+    monogramaMedio: "/img/monograma-480.png",
   },
 };

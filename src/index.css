@@ -48,7 +48,7 @@
 
 @keyframes subir {
   from {
-    opacity: 0;
+    opacity: 0.01;
     transform: translateY(14px);
   }
   to {

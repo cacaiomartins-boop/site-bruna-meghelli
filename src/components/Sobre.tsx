@@ -10,7 +10,15 @@ export default function Sobre() {
       {/* monograma como marca d'água, com leve movimento na rolagem */}
       <div className="pointer-events-none absolute -right-10 top-1/2 hidden w-80 -translate-y-1/2 md:block lg:right-10 lg:w-96">
         <Parallax velocidade={0.1}>
-          <img src={clinic.fotos.monograma} alt="" aria-hidden="true" className="w-full opacity-[0.09]" loading="lazy" />
+          <img
+            src={clinic.fotos.monogramaMedio}
+            alt=""
+            aria-hidden="true"
+            className="w-full opacity-[0.09]"
+            width="480"
+            height="424"
+            loading="lazy"
+          />
         </Parallax>
       </div>
 

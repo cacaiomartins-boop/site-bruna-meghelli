@@ -1,5 +1,6 @@
 import { clinic } from "../data/clinic";
 import { IconPin, IconVideo, IconSeta } from "./Icons";
+import MapaEmbed from "./MapaEmbed";
 import { Reveal } from "./Reveal";
 
 export default function Atendimento() {
@@ -64,13 +65,10 @@ export default function Atendimento() {
             delay={120}
             className="relative order-4 overflow-hidden rounded-2xl shadow-xl shadow-terra/15 ring-4 ring-areia/80 md:order-none md:min-h-[7.5rem]"
           >
-            <iframe
+            <MapaEmbed
               src={e.mapaEmbed}
               title="Mapa com a localização do consultório, na Rua Dona Maria Jacinta, 241, São Carlos"
               className="block h-64 w-full border-0 md:absolute md:inset-0 md:h-full"
-              loading="lazy"
-              referrerPolicy="no-referrer-when-downgrade"
-              allowFullScreen
             />
           </Reveal>
         </div>

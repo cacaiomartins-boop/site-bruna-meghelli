@@ -16,7 +16,7 @@ export default function Hero() {
       <div className="container-site relative grid items-center gap-6 py-8 md:grid-cols-2 md:gap-14 md:py-8">
         <div className="animar order-2 text-center md:order-1 md:text-left">
           <img
-            src={clinic.fotos.monograma}
+            src={clinic.fotos.monogramaPequeno}
             alt=""
             className="mx-auto mb-3 h-14 w-auto md:mx-0 md:h-20 lg:h-24"
             width="126"
@@ -46,6 +46,8 @@ export default function Hero() {
           <div className="blob relative mx-auto aspect-[4/5] h-[min(18rem,33svh)] overflow-hidden shadow-xl shadow-terra/20 ring-4 ring-areia/80 md:h-[min(36rem,calc(100svh-9rem))]">
             <img
               src={clinic.fotos.hero}
+              srcSet={clinic.fotos.heroSrcSet}
+              sizes="(min-width: 768px) 460px, 240px"
               alt="Bruna Meghelli, psicóloga e psicanalista, sentada em frente a uma estante de livros"
               className="h-full w-full object-cover object-[50%_20%]"
               width="1200"

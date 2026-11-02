@@ -1,10 +1,18 @@
 import { StrictMode } from "react";
-import { createRoot } from "react-dom/client";
+import { createRoot, hydrateRoot } from "react-dom/client";
 import App from "./App";
 import "./index.css";
 
-createRoot(document.getElementById("root")!).render(
+const raiz = document.getElementById("root")!;
+const app = (
   <StrictMode>
     <App />
-  </StrictMode>,
+  </StrictMode>
 );
+
+// No site publicado o HTML já vem pronto (pré-renderizado); no desenvolvimento a raiz está vazia.
+if (raiz.hasChildNodes()) {
+  hydrateRoot(raiz, app);
+} else {
+  createRoot(raiz).render(app);
+}

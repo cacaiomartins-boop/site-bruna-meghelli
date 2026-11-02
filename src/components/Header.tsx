@@ -28,8 +28,8 @@ export default function Header() {
       }`}
     >
       <div className="container-site flex h-[4.5rem] items-center justify-between">
-        <a href="#topo" className="flex items-center gap-3" aria-label="Bruna Meghelli, início">
-          <img src={clinic.fotos.monograma} alt="" className="h-10 w-auto" width="45" height="40" />
+        <a href="#topo" className="flex items-center gap-3">
+          <img src={clinic.fotos.monogramaPequeno} alt="" className="h-10 w-auto" width="45" height="40" />
           <span className="flex flex-col">
             <span className="font-display text-lg leading-none tracking-wide text-terra md:text-xl">
               BRUNA MEGHELLI
@@ -55,7 +55,7 @@ export default function Header() {
 
         <button
           type="button"
-          className="flex h-10 w-10 items-center justify-center rounded-full text-marrom md:hidden"
+          className="flex h-11 w-11 items-center justify-center rounded-full text-marrom md:hidden"
           aria-expanded={aberto}
           aria-controls="menu-mobile"
           aria-label={aberto ? "Fechar menu" : "Abrir menu"}

@@ -61,15 +61,17 @@ const origem = {
 export function Reveal({ children, as = "div", className = "", delay = 0, from = "baixo" }: RevealProps) {
   const ref = useRef<HTMLElement | null>(null);
   const [visivel, setVisivel] = useState(false);
+  const [reduzido, setReduzido] = useState(false);
 
   useEffect(() => {
+    setReduzido(reduzMovimento());
     const el = ref.current;
     if (!el) return;
     return observar(el, () => setVisivel(true));
   }, []);
 
   // Com "reduzir movimento" ligado no sistema: só um fade suave, sem deslocamento.
-  const deslocamento = reduzMovimento() ? "" : origem[from];
+  const deslocamento = reduzido ? "" : origem[from];
   const Tag = as;
   return (
     <Tag
